@@ -1,0 +1,115 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto:wght@300;400;500&display=swap');
+
+/* Colors */
+:root{
+    /* --primary-color:#1D4ED8; */
+    --primary-color:#41B3A3;
+    --white:#ffffff;
+    --secondary-color:#6B7280;
+    
+}
+/* Default styling Remover */
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    /* background-color:var(--primary-color); */
+}
+
+hr{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.center-container{
+    max-width:620px;
+    margin:auto;
+}
+
+.link{
+    text-decoration: none;
+}
+.primary-link,.secondary-link
+{
+    display:block;
+    margin: 2rem 0rem;
+}
+.primary-link
+{
+    background-color:var(--primary-color); 
+    padding:1rem;
+    max-width:100px;
+    border-radius:1rem;
+    color:var(--white);
+}
+.secondary-link
+{
+    padding:1rem;
+    max-width:100px;
+    border: 1.5px solid var(--primary-color);
+    border-radius:1rem;
+    color:var(--primary-color);
+}
+.unordered{
+    list-style-type: none;
+    padding:0;
+}
+.inline li{
+    display:inline;
+    padding:1rem;
+}
+nav .inline{
+    text-align: right;
+    
+}
+nav .link,h2,.footer,.footer .link{
+    color:var(--white);
+}
+.active{
+    font-weight: 500;
+}
+nav{
+    background-color:var(--primary-color);
+    padding:1rem;
+    border-radius:0rem 0rem 0rem 1.5rem;
+}
+.hero .hero-image{
+    max-width: 80%;
+    width:350px;
+    display:block;
+    margin:auto;
+    /* padding:0; */
+}
+.hero .hero-heading{
+    text-align:center;
+    color: var(--secondary-color);
+}
+.highlight{
+    color: var(--primary-color);
+}
+.section h1{
+    text-align:center;
+}
+.section p{
+    max-width: 620px;
+    margin:auto;
+}
+.section
+{
+    padding:2rem;
+    /* padding-bottom: 1rem;; */
+    margin:1rem 0rem;;
+}
+.off-white{
+    background-color:var(--secondary-color);
+}
+.footer{
+    background-color:var(--primary-color);
+    padding:3rem;
+    border-radius:0rem 1.5rem 0rem 0rem;
+    text-align:center;
+}
+.footer-heading{
+font-size: 1.5rem;
+font-weight: 500;
+}
