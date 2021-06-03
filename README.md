@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Level 0 Portfolio 👋</h1>
+<h1 align="center" id="top">Welcome to Level 0 Portfolio 👋</h1>
 <p align="center"><img src="img/demo.gif"></p>
 
 ![](https://img.shields.io/badge/CSS-3-blue)
@@ -26,7 +26,7 @@
 - [References](#references)
 - [Contribution](#contribution)
 - [License](#license)
-- [Pending Features](#pending-features)
+- [ToDos](#To-Dos)
 - [Related Projects](#related-projects)
 - [Support](#support)
 - [Author Info](#author-info)
@@ -96,7 +96,7 @@ I have used the following resources in creation of this project:
 
 # Contribution
 
-[CONTRIBUTION.md](CONTRIBUTION.md)
+[CONTRIBUTING.md](CONTRIBUTING.md)
 
 <br/>
 
@@ -104,13 +104,29 @@ I have used the following resources in creation of this project:
 
 [MIT License](LICENSE.md)
 
-Copyright (c) [2021] [codersaty]
+Copyright (c) 2021 @[codersaty](http://codersaty.me)
 
 <br/>
 
+# To Dos
+
+> Thinking About it.
+
+
+<br/>
+
+# Related Projects
+
+
+> I will add the projects soon.
+
+
+<br/>
+
+
 # Support
 
-In case of any problem, feel free to do pull requests or contact the author.
+In case of any problem/ query, feel free to do pull requests or contact the author.
 
 <br/>
 
@@ -122,4 +138,4 @@ In case of any problem, feel free to do pull requests or contact the author.
 
 <br/>
 
-[Back To The Top](#Level-0-portfolio)
+[Back To The Top](#top)
