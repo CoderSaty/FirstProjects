@@ -1,3 +1,5 @@
+<p> If you do not know how to create a pull request follow <a href="https://www.youtube.com/watch?v=rgbCcBNZcdQ">this tutorial</a></p>
+
 <h1>How to Contribute?..</h1>
         <p> You can either contribute by adding project to the project page or adding blog to the blog page. The only
             condition is that the project should be begineer friendly. You can follow the following steps in order to
