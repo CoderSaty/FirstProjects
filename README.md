@@ -20,11 +20,11 @@
 # Table of Contents
 
 - [Description](#description)
+- [Contribution](#contribution)
 - [Technologies Used](#technologies)
 - [Features](#features)
 - [How to use](#How-to-use)
 - [References](#references)
-- [Contribution](#contribution)
 - [License](#license)
 - [ToDos](#To-Dos)
 - [Related Projects](#related-projects)
@@ -40,6 +40,12 @@ A simple and easy to use website created using HTML5 and CSS to list all the pro
 The website also has a dedicated page for blogs where there are links to all the blogs written by me till date. 
 
 [Live Demo](https://codersaty.netlify.app/)
+
+<br/>
+
+# Contribution
+
+[CONTRIBUTING.md](CONTRIBUTING.md)
 
 <br/>
 
@@ -94,11 +100,6 @@ I have used the following resources in creation of this project:
 
 <br/>
 
-# Contribution
-
-[CONTRIBUTING.md](CONTRIBUTING.md)
-
-<br/>
 
 # License
 
