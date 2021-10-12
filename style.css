@@ -101,7 +101,7 @@ nav{
 .hero{
     margin-bottom: 2rem;
 }
-.section p,ul{
+.section p,ul,pre,ol{
     max-width: 620px;
     margin:auto;
 }
