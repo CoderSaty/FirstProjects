@@ -45,8 +45,7 @@ hr{
 }
 .primary-link
 {
-    display: inline-block;
-    position: relative;
+    
     background-color:var(--primary-color); 
     padding:1rem;
     border-radius:1rem;
@@ -54,8 +53,7 @@ hr{
 }
 .secondary-link
 {
-    display: inline-block;
-    position: relative;
+    
     padding:1rem;
     border: 1.5px solid var(--primary-color);
     border-radius:1rem;
@@ -110,7 +108,7 @@ nav{
     margin-bottom: 2rem;
 }
 .section p,ul,pre,ol{
-    position: relative;
+  
     max-width: 620px;
     margin:auto;
 }
