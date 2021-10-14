@@ -15,6 +15,9 @@
 * {
     box-sizing: border-box;
 }
+a:hover {
+    color: blue;
+  }
 
 body{
     margin:0;
@@ -172,4 +175,9 @@ padding-bottom:1rem;
 
 .mb-2 {
     margin-bottom: 2rem !important;
+}
+
+.inline li a:hover,
+li a:hover{
+color: var(--light);
 }

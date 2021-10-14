@@ -28,7 +28,7 @@
                     &lt;/p>
                     &lt;p class="description mb-2">
                         Project Description &lt;/p>
-                     &lt;p>
+                     &lt;p class="project-links">
                         &lt;a target="_blank" href="Your project Link" class="link primary-link">Live Demo</a>
                         &lt;a target="_blank" href="Your Github Repo of the project" class="link secondary-link">View
                             Source</a>
