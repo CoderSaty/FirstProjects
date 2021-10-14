@@ -45,6 +45,7 @@ hr{
 }
 .primary-link
 {
+    
     background-color:var(--primary-color); 
     padding:1rem;
     border-radius:1rem;
@@ -52,6 +53,7 @@ hr{
 }
 .secondary-link
 {
+    
     padding:1rem;
     border: 1.5px solid var(--primary-color);
     border-radius:1rem;
@@ -111,13 +113,17 @@ nav{
     margin-bottom: 2rem;
 }
 .section p,ul,pre,ol{
+  
     max-width: 620px;
     margin:auto;
 }
 
 .section
 {
-    padding: 2rem;
+/*  padding: 2rem;
+    position: relative;
+    padding:2rem;
+ */
     /* padding-bottom: 1rem;; */
     margin: 1rem 0rem;;
 }
@@ -178,6 +184,7 @@ padding-bottom:1rem;
 .mb-2 {
     margin-bottom: 2rem !important;
 }
+
 .inline li a:hover,
 li a:hover{
 color: var(--light);
