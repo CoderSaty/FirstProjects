@@ -20,19 +20,19 @@
               <br/>
             <pre><code>
               &lt;section class="section">
-                    &lt;h2 class="project-heading">Your Project Name</h2>
-                    &lt;p class="project-date"> Timeline of Your Projects</p>
+                    &lt;h2 class="project-heading">Your Project Name&lt;/h2>
+                    &lt;p class="project-date"> Timeline of Your Projects&lt;/p>
                     &lt;p class="tech-stack">
-                        &lt;strong class="highlight-white">Tech Stack Used:</strong> &lt;em>Technologies used in your Project.
+                        &lt;strong class="highlight-white">Tech Stack Used:&lt;/strong> &lt;em>Technologies used in your Project.
                         &lt;/em>
                     &lt;/p>
                     &lt;p class="description mb-2">
                         Project Description &lt;/p>
                      &lt;p class="project-links">
-                        &lt;a target="_blank" href="Your project Link" class="link primary-link">Live Demo</a>
+                        &lt;a target="_blank" href="Your project Link" class="link primary-link">Live Demo&lt;/a>
                         &lt;a target="_blank" href="Your Github Repo of the project" class="link secondary-link">View
-                            Source</a>
-                        &lt;a target="_blank" href="Your Profile link/" class="link primary-link">Created By</a>
+                            Source&lt;/a>
+                        &lt;a target="_blank" href="Your Profile link/" class="link primary-link">Created By&lt;/a>
                     &lt;/p>
                 &lt;/section>
               </code></pre>
