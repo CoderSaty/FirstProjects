@@ -16,13 +16,14 @@
     box-sizing: border-box;
 }
 a:hover {
-    color: blue;
+    color:rgb(119, 30, 202);
   }
 
 body{
     margin:0;
     padding:0;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(178, 226, 211);
     /* background-color:var(--primary-color); */
 }
 
@@ -85,8 +86,8 @@ nav .link,h2,.footer,.footer .link{
 }
 nav{
     background-color:var(--primary-color);
-    padding:1rem;
-    border-radius:0rem 0rem 0rem 1.5rem;
+    border-radius:100;
+    padding-left: 10px;
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
@@ -179,6 +180,7 @@ padding-bottom:1rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .mb-2 {
