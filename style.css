@@ -39,10 +39,12 @@ hr{
 .link{
     text-decoration: none;
 }
+
 .primary-link,.secondary-link
 {
     margin: 2rem 0rem;
 }
+
 .primary-link
 {
     
@@ -61,7 +63,7 @@ hr{
 }
 .unordered{
     list-style-type: none;
-    padding:0;
+    padding:0.2;
 }
 
 
@@ -70,19 +72,24 @@ hr{
     padding:1rem;
     margin:0;
 }
+
 nav ul {
     margin-right:0px;
 }
+
 nav .inline{
     text-align: right;
     
 }
+
 nav .link,h2,.footer,.footer .link{
     color:var(--white);
 }
+
 .active{
     font-weight: 500;
 }
+
 nav{
     background-color:var(--primary-color);
     padding:1rem;
@@ -92,9 +99,10 @@ nav{
     justify-content: center;
     align-items: center;
 }
+
 .hero .hero-image{
     max-width: 80%;
-    width:350px;
+    width:300px;
     display:block;
     margin:auto;
     /* padding:0; */
@@ -109,6 +117,7 @@ nav{
 .section h1{
     text-align:center;
 }
+
 .hero{
     margin-bottom: 2rem;
 }
@@ -138,7 +147,7 @@ nav{
 }
 .footer-heading{
 font-size: 1.5rem;
-font-weight: 500;
+font-weight: 420;
 padding-bottom:1rem;
 }
 .footer ul{
@@ -169,7 +178,7 @@ padding-bottom:1rem;
     background-color: var(--primary-color);
     padding: 1rem;
     border-radius: 1.5rem 0 1.5rem 0;
-    max-width: 220px;
+    max-width: 189px;
     text-decoration: none;
     color: var(--white);
 
