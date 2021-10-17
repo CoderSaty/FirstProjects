@@ -12,6 +12,13 @@
     
 }
 /* Default styling Remover */
+* {
+    box-sizing: border-box;
+}
+a:hover {
+    color: blue;
+  }
+
 body{
     margin:0;
     padding:0;
@@ -24,8 +31,8 @@ hr{
     margin-bottom: 2rem;
 }
 .center-container{
-    max-width:620px;
-    margin:auto;
+    max-width: 620px;
+    margin: auto;
     margin-bottom: 10rem;;
 }
 
@@ -34,21 +41,20 @@ hr{
 }
 .primary-link,.secondary-link
 {
-    display:block;
     margin: 2rem 0rem;
 }
 .primary-link
 {
+    
     background-color:var(--primary-color); 
     padding:1rem;
-    max-width:90px;
     border-radius:1rem;
     color:var(--white);
 }
 .secondary-link
 {
+    
     padding:1rem;
-    max-width:90px;
     border: 1.5px solid var(--primary-color);
     border-radius:1rem;
     color:var(--primary-color);
@@ -57,6 +63,8 @@ hr{
     list-style-type: none;
     padding:0;
 }
+
+
 .inline li{
     display:inline;
     padding:1rem;
@@ -80,6 +88,9 @@ nav{
     padding:1rem;
     border-radius:0rem 0rem 0rem 1.5rem;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hero .hero-image{
     max-width: 80%;
@@ -102,15 +113,19 @@ nav{
     margin-bottom: 2rem;
 }
 .section p,ul,pre,ol{
+  
     max-width: 620px;
     margin:auto;
 }
 
 .section
 {
+ padding: 2rem;
+    position: relative;
     padding:2rem;
+
     /* padding-bottom: 1rem;; */
-    margin:1rem 0rem;;
+    margin: 1rem 0rem;;
 }
 .off-white{
     background-color:var(--background);
@@ -151,14 +166,26 @@ padding-bottom:1rem;
     padding-bottom: 0.5rem;
 }
 .blog-button{
-    background-color:var(--primary-color);
-    padding:1rem;
+    background-color: var(--primary-color);
+    padding: 1rem;
     border-radius: 1.5rem 0 1.5rem 0;
-    max-width:220px;
+    max-width: 220px;
     text-decoration: none;
     color: var(--white);
 
 }
 .center-container {
-    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mb-2 {
+    margin-bottom: 2rem !important;
+}
+
+.inline li a:hover,
+li a:hover{
+color: var(--light);
 }
