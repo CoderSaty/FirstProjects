@@ -14,7 +14,8 @@
 
 <body>
     <nav>
-        <h2>CoderSaty </h2>
+        
+        <h2> <a class="link" href="index.html">CoderSaty</a> </h2>
         <ul class="unordered inline">
             <li>
                 <a class="link active" href="/">Home</a>
@@ -90,7 +91,22 @@
             <li><a tagrget="_blank" href="https://www.github.com/codersaty" class="link"><i
                         class="fi fi-github"></i></a></li>
         </ul>
+        <br>
+        <div class="counter">
+            <div class="head">Total Website Visit</div>
+            <div class="count">00</div>
+        </div>
     </footer>
+
+    <script>
+        function updateCounter() {
+         fetch('https://api.countapi.xyz/update/uimonk/youtubechannel/?amount=1')
+        .then(res => res.json())
+        .then(data => counterElement.innerHTML = data.value)
+        }
+        updateCounter()
+        counterElement = document.getElementsByClassName('count')[0];
+    </script>
 </body>
 
 </html>
