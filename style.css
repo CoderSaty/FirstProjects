@@ -111,7 +111,22 @@ nav{
 }
 .hero{
     margin-bottom: 2rem;
+    padding: 0;
 }
+
+.hero .highlight{
+    animation-name: colors;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colors{
+    0% {color:var(--primary-color);}
+    25% {color:yellow; font-size: 3rem;}
+    50% {color:blue; font-size: 5rem;}
+    100% {color:green;}
+}
+
 .section p,ul,pre,ol{
   
     max-width: 620px;
@@ -120,7 +135,6 @@ nav{
 
 .section
 {
- padding: 2rem;
     position: relative;
     padding:2rem;
 
@@ -151,6 +165,7 @@ padding-bottom:1rem;
 .tech li {
 
     margin:1rem;
+    text-align: center;
 }
 .section h2{
     color: var(--primary-color);
@@ -188,4 +203,8 @@ padding-bottom:1rem;
 .inline li a:hover,
 li a:hover{
 color: var(--light);
+}
+
+.para{
+    text-align: center;
 }
