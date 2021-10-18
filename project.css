@@ -58,3 +58,16 @@
     }
 
 }
+/* back to top */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 9px;
+    display: none;
+    border-radius: 50%;
+    background-color:#41b3a3;
+    color:#fff;
+    padding: 0;
+    width: 2.8125rem;
+      height: 2.8125rem;
+  }
