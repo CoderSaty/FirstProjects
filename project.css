@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+    }
 .primary-link{
     transition-duration: 0.2s;
 
@@ -58,3 +61,11 @@
     }
 
 }
+.bottomright {
+    position: fixed;
+    bottom: 8px;
+    right: 10px;
+    font-size: 18px;
+    border-radius:50%;
+    background-color: #41b3a3;
+  }
