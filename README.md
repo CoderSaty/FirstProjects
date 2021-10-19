@@ -1,5 +1,5 @@
 <h1 align="center" id="top">Welcome to Level 0 Portfolio 👋</h1>
-<p align="center"><img src="img/screencast-codersaty.netlify.app-2021.10.14-22_04_22.gif"></p>
+<p align="center"><img src="src/img/screencast-codersaty.netlify.app-2021.10.14-22_04_22.gif"></p>
 
 ![](https://img.shields.io/badge/CSS-3-blue)
 ![](https://img.shields.io/badge/HTML-5-blue)
