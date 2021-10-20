@@ -1,3 +1,5 @@
+"use strict";
+
 const counterElement = document.getElementsByClassName("count")[0];
 
 function updateCounter() {
