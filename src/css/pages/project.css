@@ -41,8 +41,13 @@ html {
 }
 
 .project-links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
 	width: fit-content;
 	margin: auto;
+	gap: 1rem;
 }
 
 .bottom-right {

@@ -37,14 +37,13 @@
 		display: grid;
 		position: relative;
 		margin: 2rem 0;
-		padding: 1.4rem;
+		padding: 1.4rem !important;
 	}
-
 	.container {
 		display: block;
 		width: auto;
 		height: 100%;
-		margin: 15px;
+		margin: 15px 15px;
 		padding: 20px;
 	}
 
@@ -53,7 +52,6 @@
 		transform: translateX(-200%);
 		border-radius: 10px;
 	}
-
 	.project-heading {
 		transform: translateY(12%);
 	}
