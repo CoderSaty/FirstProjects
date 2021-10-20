@@ -1,9 +1,8 @@
 "use strict";
 
 const counterElements = document.getElementsByClassName("count");
-const counterElement, rest;
+let counterElement, rest;
 [counterElement, ...rest] = counterElements;
-
 
 function updateCounter() {
 	fetch("https://api.countapi.xyz/update/uimonk/youtubechannel/?amount=1")

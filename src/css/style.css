@@ -135,6 +135,9 @@ ol {
 }
 
 .section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding: 2rem;
 	position: relative;
 	margin: 1rem 0;
