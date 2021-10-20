@@ -148,7 +148,7 @@ ol {
 
 .section {
 	display: flex;
-	flex-direction: ;
+	flex-direction: column;
 	align-items: center;
 	padding: 2rem;
 	position: relative;
