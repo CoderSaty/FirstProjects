@@ -12,10 +12,7 @@
 
 # Basic Overview
 
-> This project is developed to practice the newly learned skills (when you are at level 0 of that skill) by creating small (1-3 hours) projects as a begineer.  
-
-<br/>
-
+> This project is developed to practice the newly learned skills (when you are at level 0 of that skill) by creating small (1-3 hours) projects as a begineer.
 
 # Table of Contents
 
@@ -31,23 +28,17 @@
 - [Support](#support)
 - [Author Info](#author-info)
 
-<br/>
-
 # Description
 
 A simple and easy to use website created using HTML5 and CSS to list all the projects created by me as a begineer. I believe that best way to learn any tech is to get your hands dirty with the code. Learn by doing. This is the reason why I prefer to create project whenever I learn a new technology using that technology and my previous knowledge. This website will list all such projects.
 
-The website also has a dedicated page for blogs where there are links to all the blogs written by me till date. 
+The website also has a dedicated page for blogs where there are links to all the blogs written by me till date.
 
 [Live Demo](https://codersaty.netlify.app/)
-
-<br/>
 
 # Contribution
 
 [CONTRIBUTING.md](CONTRIBUTING.md)
-
-<br/>
 
 # Technologies
 
@@ -61,7 +52,7 @@ The website also has a dedicated page for blogs where there are links to all the
 - [Markdown](https://en.wikipedia.org/wiki/Markdown)
 - [JSX](https://en.wikipedia.org/wiki/JSX)
 
-### Tools used
+## Tools used
 
 - [VS Code](https://en.wikipedia.org/wiki/Visual_Studio_Code)
 - [Github](https://en.wikipedia.org/wiki/GitHub)
@@ -69,7 +60,6 @@ The website also has a dedicated page for blogs where there are links to all the
 - [Codesandbox](https://codesandbox.io/)
 - [Fun Translation API](https://funtranslations.com/)
 
-<br/>
 
 # Features
 
@@ -77,16 +67,12 @@ The website also has a dedicated page for blogs where there are links to all the
 - All Beginner Friendly Projects
 - Consists of more than 10 technology.
 
-<br/>
-
 # How To Use
 
 This website can be used in two ways:
 
 - Portfolio to showcase my work
 - As a guide for beginner for project ideas.
-
-<br/>
 
 # References
 
@@ -98,45 +84,28 @@ I have used the following resources in creation of this project:
 
 - [Getting started with CSS3](https://youtu.be/u6_a0d94A1Q?list=PLzvhQUIpvvuj5KPnyPyWsvgyzNkX_ACPA)
 
-<br/>
-
-
 # License
 
 [MIT License](LICENSE.md)
 
 Copyright (c) 2021 @[codersaty](http://codersaty.me)
 
-<br/>
-
 # To Dos
 
 > Thinking About it.
 
-
-<br/>
-
 # Related Projects
 
-
 > I will add the projects soon.
-
-
-<br/>
-
 
 # Support
 
 In case of any problem/ query, feel free to do pull requests or contact the author.
-
-<br/>
 
 # Author Info
 
 - Twitter - [@codersaty](https://twitter.com/codersaty)
 - Website - [Anuranjan Srivastava](http://codersaty.me)
 - Linkedin - [codersaty](https://www.linkedin.com/in/codersaty)
-
-<br/>
 
 [Back To The Top](#top)
