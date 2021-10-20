@@ -1,7 +1,8 @@
 "use strict";
 
 const counterElements = document.getElementsByClassName("count");
-const counterElement = counterElements[0];
+const counterElement, rest;
+[counterElement, ...rest] = counterElements;
 
 
 function updateCounter() {
