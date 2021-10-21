@@ -1,117 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<title>Component Library</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Component Library</title>
-</head>
+	<body>
+		<h1>Codersaty Component Library</h1>
+		<p>
+			This is a library which will help me to create my other projects good and
+			easy to develope for me.
+		</p>
+		<hr />
 
-<body>
+		<h2>@typography</h2>
+		<h1>Biggest Heading</h1>
+		<h2>Second Biggest Heading</h2>
+		<p>Normal Text</p>
+		<p>str</p>
+		<small>Small Text</small>
+		<hr />
+		<h2>@containers</h2>
+		<h3>fluid container</h3>
+		<div>
+			<p>This is a fluid container covers to the whole page</p>
+		</div>
+		<h3>center container</h3>
+		<div class="center-container">
+			This is a fluid container covers only the certian width of the pageThis is
+			a fluid container covers only the certian width of the pageThis is a fluid
+			container covers only the certian width of the pageThis is a fluid
+			container covers only the certian width of the pageThis is a fluid
+			container covers only the certian width of the page
+		</div>
+		<hr />
+		<h2>@links</h2>
+		<!-- <a href="http://google.com/">Google </a> -->
+		<a href="/" class="link primary-link">Primary Link </a>
+		<a href="/" class="link secondary-link">Secondary Link </a>
+		<hr />
+		<h2>@lists</h2>
+		<h3>Ordered list</h3>
+		<ol>
+			<li>Item One</li>
+			<li>Item Two</li>
+			<li>Item Three</li>
+		</ol>
+		<h3>Reverse ordered list</h3>
+		<ol reversed>
+			<li>Item One</li>
+			<li>Item Two</li>
+			<li>Item Three</li>
+		</ol>
+		<h3>Unordered list</h3>
+		<ul class="unordered">
+			<li>Item One</li>
+			<li>Item Two</li>
+			<li>Item Three</li>
+		</ul>
+		<h3>Inline list</h3>
+		<ul class="unordered inline">
+			<li>Item One</li>
+			<li>Item Two</li>
+			<li>Item Three</li>
+		</ul>
+		<hr />
+		<h2>@nav</h2>
+		<nav>
+			<h2>BrandName</h2>
+			<ul class="unordered inline">
+				<li>
+					<a class="link active" href="/">Home</a>
+				</li>
+				<li>
+					<a class="link" href="/">Product</a>
+				</li>
+				<li>
+					<a class="link" href="/">About</a>
+				</li>
+			</ul>
+		</nav>
+		<hr />
+		<h2>@header</h2>
+		<header class="hero">
+			<img src="hero.svg" alt="" class="hero-image" />
+			<h1 class="hero-heading">
+				Hero Heading <span class="highlight">the web Developer</span>
+			</h1>
+		</header>
+		<hr />
+		<h2>@section</h2>
+		<section class="section">
+			<h1>White Section</h1>
+			<p>
+				We are an open community of developers building resources for a better
+				Web, regardless of brand, browser, or platform. Anyone can contribute
+				and each person who does makes us stronger. Together we can continue to
+				drive innovation on the Web to serve the greater good. It starts here,
+				with you.
+			</p>
+		</section>
 
-
-    <h1>Codersaty Component Library</h1>
-    <p>This is a library which will help me to create my other projects good and easy to develope for me.</p>
-    <hr>
-
-    <h2>@typography</h2>
-    <h1>Biggest Heading</h1>
-    <h2>Second Biggest Heading</h2>
-    <p>Normal Text</p>
-    <p>str</p>
-    <small>Small Text</small>
-    <hr>
-    <h2>@containers</h2>
-    <h3>fluid container</h3>
-    <div>
-        <p>This is a fluid container covers to the whole page</p>
-    </div>
-    <h3>center container</h3>
-    <div class="center-container">This is a fluid container covers only the certian width of the pageThis is a fluid
-        container covers only the certian width of the pageThis is a fluid container covers only the certian width of
-        the pageThis is a fluid container covers only the certian width of the pageThis is a fluid container covers only
-        the certian width of the page</div>
-    <hr>
-    <h2>@links</h2>
-    <!-- <a href="http://google.com/">Google </a> -->
-    <a href="/" class="link primary-link">Primary Link </a>
-    <a href="/" class="link secondary-link">Secondary Link </a>
-    <hr>
-    <h2>@lists</h2>
-    <h3>Ordered list</h3>
-    <ol>
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-    </ol>
-    <h3>Reverse ordered list</h3>
-    <ol reversed>
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-    </ol>
-    <h3>Unordered list</h3>
-    <ul class="unordered">
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-
-    </ul>
-    <h3>Inline list</h3>
-    <ul class="unordered inline">
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-    </ul>
-    <hr>
-    <h2>@nav</h2>
-    <nav>
-        <h2>BrandName</h2>
-        <ul class="unordered inline">
-            <li>
-                <a class="link active" href="/">Home</a>
-            </li>
-            <li>
-                <a class="link" href="/">Product</a>
-            </li>
-            <li>
-                <a class="link" href="/">About</a>
-            </li>
-        </ul>
-    </nav>
-    <hr>
-    <h2>@header</h2>
-    <header class="hero">
-        <img src="hero.svg" alt="" class="hero-image">
-        <h1 class="hero-heading">Hero Heading <span class="highlight">the web Developer</span></h1>
-    </header>
-    <hr>
-    <h2>@section</h2>
-    <section class="section">
-        <h1>White Section</h1>
-        <p>We are an open community of developers building resources for a better Web, regardless of brand, browser, or
-            platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to
-            drive innovation on the Web to serve the greater good. It starts here, with you.</p>
-    </section>
-
-    <section class="section off-white">
-        <h1>off-White Section</h1>
-        <p>We are an open community of developers building resources for a better Web, regardless of brand, browser, or
-            platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to
-            drive innovation on the Web to serve the greater good. It starts here, with you.</p>
-    </section>
-    <hr>
-    <h2>@footer</h2>
-    <footer class="footer">
-        <small class="footer-heading">This is the footer</small>
-        <ul class="inline unordered">
-            <li><a href="" class="link">Social One</a></li>
-            <li><a href="" class="link">Social Two</a></li>
-            <li><a href="" class="link">Social Three</a></li>
-        </ul>
-    </footer>
-</body>
-
+		<section class="section off-white">
+			<h1>off-White Section</h1>
+			<p>
+				We are an open community of developers building resources for a better
+				Web, regardless of brand, browser, or platform. Anyone can contribute
+				and each person who does makes us stronger. Together we can continue to
+				drive innovation on the Web to serve the greater good. It starts here,
+				with you.
+			</p>
+		</section>
+		<hr />
+		<h2>@footer</h2>
+		<footer class="footer">
+			<small class="footer-heading">This is the footer</small>
+			<ul class="inline unordered">
+				<li><a href="" class="link">Social One</a></li>
+				<li><a href="" class="link">Social Two</a></li>
+				<li><a href="" class="link">Social Three</a></li>
+			</ul>
+		</footer>
+	</body>
 </html>
