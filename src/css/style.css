@@ -2,170 +2,177 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto:wght@300;400;500&display=swap');
 
 /* Colors */
-:root{
-    /* --primary-color:#1D4ED8; */
+:root {
     --primary-color:#41B3A3;
     --white:#ffffff;
     --secondary-color:#6B7280;
     --background:#D1D5DB;
     --light:#707070;
-    
 }
+
 /* Default styling Remover */
 * {
+    outline: none;
     box-sizing: border-box;
 }
+
 a:hover {
     color: blue;
-  }
+}
 
-body{
+body {
     margin:0;
     padding:0;
     font-family: 'Roboto', sans-serif;
-    /* background-color:var(--primary-color); */
 }
 
-hr{
+hr {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-.center-container{
+
+.center-container {
     max-width: 620px;
-    margin: auto;
-    margin-bottom: 10rem;;
+    margin-bottom: 10rem;
 }
 
-.link{
+.link {
     text-decoration: none;
 }
-.primary-link,.secondary-link
-{
-    margin: 2rem 0rem;
+.primary-link, .secondary-link {
+    margin: 2rem 0;
 }
-.primary-link
-{
-    
-    background-color:var(--primary-color); 
-    padding:1rem;
-    border-radius:1rem;
-    color:var(--white);
+
+.primary-link {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--white);
 }
-.secondary-link
-{
-    
-    padding:1rem;
-    border: 1.5px solid var(--primary-color);
-    border-radius:1rem;
-    color:var(--primary-color);
+
+.secondary-link {
+    padding: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 1rem;
+    color: var(--primary-color);
 }
-.unordered{
+
+.unordered {
     list-style-type: none;
     padding:0;
 }
 
+.inline li {
+    display: inline;
+    padding: 1rem;
+    margin: 0;
+}
 
-.inline li{
-    display:inline;
-    padding:1rem;
-    margin:0;
-}
 nav ul {
-    margin-right:0px;
+    margin-right: 0;
 }
-nav .inline{
+
+nav .inline {
     text-align: right;
-    
 }
-nav .link,h2,.footer,.footer .link{
+
+nav .link, h2, .footer, .footer .link {
     color:var(--white);
 }
-.active{
+
+.active {
     font-weight: 500;
 }
-nav{
-    background-color:var(--primary-color);
-    padding:1rem;
-    border-radius:0rem 0rem 0rem 1.5rem;
+
+nav {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 0 0 0 1.5rem;
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.hero .hero-image{
+
+.hero .hero-image {
     max-width: 80%;
     width:350px;
     display:block;
     margin:auto;
     /* padding:0; */
 }
-.hero .hero-heading{
+
+.hero .hero-heading {
     text-align:center;
     color: var(--secondary-color);
 }
-.highlight{
+
+.highlight {
     color: var(--primary-color);
 }
-.section h1{
+
+.section h1 {
     text-align:center;
 }
-.hero{
+
+.hero {
     margin-bottom: 2rem;
 }
-.section p,ul,pre,ol{
-  
+
+.section p, ul, pre, ol {
     max-width: 620px;
     margin:auto;
 }
 
-.section
-{
- padding: 2rem;
+.section {
+    padding: 2rem;
     position: relative;
-    padding:2rem;
-
-    /* padding-bottom: 1rem;; */
-    margin: 1rem 0rem;;
+    margin: 1rem 0;
 }
-.off-white{
+
+.off-white {
     background-color:var(--background);
 }
-.footer{
+
+.footer {
     background-color:var(--primary-color);
     padding:3rem;
-    border-radius:0rem 1.5rem 0rem 0rem;
+    border-radius:0 1.5rem 0 0;
     text-align:center;
 }
-.footer-heading{
-font-size: 1.5rem;
-font-weight: 500;
-padding-bottom:1rem;
-}
-.footer ul{
-    margin-top:1rem;;
-}
-.highlight-white{
-    color: var(--primary-color);
-    /* font-weight:bold; */
-}
-.tech li {
 
+.footer-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom:1rem;
+}
+
+.footer ul {
+    margin-top: 1rem;
+}
+
+.highlight-white {
+    color: var(--primary-color);
+}
+
+.tech li {
     margin:1rem;
 }
-.section h2{
+
+.section h2 {
     color: var(--primary-color);
     max-width: 620px;
-    margin:auto;
     margin-bottom: 1rem;
 }
-.project-date{
+
+.project-date {
     color: var(--light);
     padding-bottom: 0.5rem;
 }
-.tech-stack{
+.tech-stack {
     padding-bottom: 0.5rem;
 }
-.blog-button{
+.blog-button {
     background-color: var(--primary-color);
     padding: 1rem;
     border-radius: 1.5rem 0 1.5rem 0;
@@ -185,7 +192,6 @@ padding-bottom:1rem;
     margin-bottom: 2rem !important;
 }
 
-.inline li a:hover,
-li a:hover{
-color: var(--light);
+.inline li a:hover, li a:hover {
+    color: var(--light);
 }
