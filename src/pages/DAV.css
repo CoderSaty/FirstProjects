@@ -1,0 +1,59 @@
+#list-summary {
+    background: #F7F7F7;
+    padding: 20px 0;
+}
+
+.summary-column {
+    padding: 10px 10px;
+
+}
+
+.summary {
+    border: 1px solid #D6E2EB;
+    border-radius: 5px;
+    padding: 30px 20px;
+    transition: all .3s ease-in-out;
+}
+
+
+.summary-title h6 {
+    color: #8F99AF;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: .7em;
+}
+
+.summary-price span {
+    color: #9C9FA3;
+    font-size: 0.8em;
+    line-height: 0.8em;
+    margin-right: 5px;
+}
+
+.summary-price p {
+    line-height: normal;
+    color: #444956;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-weight: 900;
+    display: inline;
+}
+
+.summary:hover {
+    background: #29b765;
+    border: 1px solid #29b765;
+    cursor: pointer;
+}
+
+.summary:hover h6 {
+    color: #fff;
+}
+
+.summary:hover span {
+    color: #fff;
+}
+
+.summary:hover p {
+    color: #fff;
+}
