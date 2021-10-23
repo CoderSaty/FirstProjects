@@ -24,7 +24,7 @@
 	// Default settings
 	//
 
-	var defaults = {
+	let defaults = {
 
 		// Selectors
 		ignore: '[data-scroll-ignore]',
@@ -61,7 +61,7 @@
 	 * Check if browser supports required methods
 	 * @return {Boolean} Returns true if all required methods are supported
 	 */
-	var supports = function () {
+	let supports = function () {
 		return (
 			'querySelector' in document &&
 			'addEventListener' in window &&
@@ -75,10 +75,10 @@
 	 * @param   {Object}   objects  The objects to merge together
 	 * @returns {Object}            Merged values of defaults and options
 	 */
-	var extend = function () {
-		var merged = {};
+	let extend = function () {
+		let merged = {};
 		Array.prototype.forEach.call(arguments, (function (obj) {
-			for (var key in obj) {
+			for (let key in obj) {
 				if (!obj.hasOwnProperty(key)) return;
 				merged[key] = obj[key];
 			}
@@ -90,7 +90,7 @@
 	 * Check to see if user prefers reduced motion
 	 * @param  {Object} settings Script settings
 	 */
-	var reduceMotion = function (settings) {
+	let reduceMotion = function (settings) {
 		if ('matchMedia' in window && window.matchMedia('(prefers-reduced-motion)').matches) {
 			return true;
 		}
@@ -102,7 +102,7 @@
 	 * @param  {Node} elem The element to get the height of
 	 * @return {Number}    The element's height in pixels
 	 */
-	var getHeight = function (elem) {
+	let getHeight = function (elem) {
 		return parseInt(window.getComputedStyle(elem).height, 10);
 	};
 
@@ -112,19 +112,19 @@
 	 * @link https://github.com/mathiasbynens/CSS.escape
 	 * @param {String} id The anchor ID to escape
 	 */
-	var escapeCharacters = function (id) {
+	let escapeCharacters = function (id) {
 
 		// Remove leading hash
 		if (id.charAt(0) === '#') {
 			id = id.substr(1);
 		}
 
-		var string = String(id);
-		var length = string.length;
-		var index = -1;
-		var codeUnit;
-		var result = '';
-		var firstCodeUnit = string.charCodeAt(0);
+		let string = String(id);
+		let length = string.length;
+		let index = -1;
+		let codeUnit;
+		let result = '';
+		let firstCodeUnit = string.charCodeAt(0);
 		while (++index < length) {
 			codeUnit = string.charCodeAt(index);
 			// Note: there’s no need to special-case astral symbols, surrogate
@@ -193,8 +193,8 @@
 	 * @param {Number} time Time animation should take to complete
 	 * @returns {Number}
 	 */
-	var easingPattern = function (settings, time) {
-		var pattern;
+	let easingPattern = function (settings, time) {
+		let pattern;
 
 		// Default Easing Patterns
 		if (settings.easing === 'easeInQuad') pattern = time * time; // accelerating from zero velocity
@@ -220,7 +220,7 @@
 	 * Determine the document's height
 	 * @returns {Number}
 	 */
-	var getDocumentHeight = function () {
+	let getDocumentHeight = function () {
 		return Math.max(
 			document.body.scrollHeight, document.documentElement.scrollHeight,
 			document.body.offsetHeight, document.documentElement.offsetHeight,
@@ -237,8 +237,8 @@
 	 * @param {Boolean} clip         If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
 	 * @returns {Number}
 	 */
-	var getEndLocation = function (anchor, headerHeight, offset, clip) {
-		var location = 0;
+	let getEndLocation = function (anchor, headerHeight, offset, clip) {
+		let location = 0;
 		if (anchor.offsetParent) {
 			do {
 				location += anchor.offsetTop;
@@ -257,7 +257,7 @@
 	 * @param  {Node}   header The header
 	 * @return {Number}        The height of the header
 	 */
-	var getHeaderHeight = function (header) {
+	let getHeaderHeight = function (header) {
 		return !header ? 0 : (getHeight(header) + header.offsetTop);
 	};
 
@@ -267,20 +267,20 @@
 	 * @param  {Object} settings The plugin settings
 	 * @return {Number}          How fast to animate
 	 */
-	var getSpeed = function (distance, settings) {
-		var speed = settings.speedAsDuration ? settings.speed : Math.abs(distance / 1000 * settings.speed);
+	let getSpeed = function (distance, settings) {
+		let speed = settings.speedAsDuration ? settings.speed : Math.abs(distance / 1000 * settings.speed);
 		if (settings.durationMax && speed > settings.durationMax) return settings.durationMax;
 		if (settings.durationMin && speed < settings.durationMin) return settings.durationMin;
 		return speed;
 	};
 
-	var setHistory = function (options) {
+	let setHistory = function (options) {
 
 		// Make sure this should run
 		if (!history.replaceState || !options.updateURL || history.state) return;
 
 		// Get the hash to use
-		var hash = window.location.hash;
+		let hash = window.location.hash;
 		hash = hash ? hash : window.pageYOffset;
 
 		// Set a default history
@@ -301,7 +301,7 @@
 	 * @param  {Boolean} isNum   If true, anchor is a number
 	 * @param  {Object}  options Settings for Smooth Scroll
 	 */
-	var updateURL = function (anchor, isNum, options) {
+	let updateURL = function (anchor, isNum, options) {
 
 		// Bail if the anchor is a number
 		if (isNum) return;
@@ -327,7 +327,7 @@
 	 * @param {Number}   endLocation The end location to scroll to
 	 * @param {Boolean}  isNum       If true, scroll is to a position rather than an element
 	 */
-	var adjustFocus = function (anchor, endLocation, isNum) {
+	let adjustFocus = function (anchor, endLocation, isNum) {
 
 		// Is scrolling to top of page, blur
 		if (anchor === 0) {
@@ -355,9 +355,9 @@
 	 * @param  {Node}   anchor  The anchor element
 	 * @param  {Node}   toggle  The toggle element
 	 */
-	var emitEvent = function (type, options, anchor, toggle) {
+	let emitEvent = function (type, options, anchor, toggle) {
 		if (!options.emitEvents || typeof window.CustomEvent !== 'function') return;
-		var event = new CustomEvent(type, {
+		let event = new CustomEvent(type, {
 			bubbles: true,
 			detail: {
 				anchor: anchor,
@@ -372,14 +372,14 @@
 	// SmoothScroll Constructor
 	//
 
-	var SmoothScroll = function (selector, options) {
+	let SmoothScroll = function (selector, options) {
 
 		//
-		// Variables
+		// letiables
 		//
 
-		var smoothScroll = {}; // Object for public APIs
-		var settings, anchor, toggle, fixedHeader, eventTimeout, animationInterval;
+		let smoothScroll = {}; // Object for public APIs
+		let settings, anchor, toggle, fixedHeader, animationInterval;
 
 
 		//
@@ -405,24 +405,24 @@
 		smoothScroll.animateScroll = function (anchor, toggle, options) {
 
 			// Local settings
-			var _settings = extend(settings || defaults, options || {}); // Merge user options with defaults
+			let _settings = extend(settings || defaults, options || {}); // Merge user options with defaults
 
-			// Selectors and variables
-			var isNum = Object.prototype.toString.call(anchor) === '[object Number]' ? true : false;
-			var anchorElem = isNum || !anchor.tagName ? null : anchor;
+			// Selectors and letiables
+			let isNum = Object.prototype.toString.call(anchor) === '[object Number]' ? true : false;
+			let anchorElem = isNum || !anchor.tagName ? null : anchor;
 			if (!isNum && !anchorElem) return;
-			var startLocation = window.pageYOffset; // Current location on the page
+			let startLocation = window.pageYOffset; // Current location on the page
 			if (_settings.header && !fixedHeader) {
 				// Get the fixed header if not already set
 				fixedHeader = document.querySelector(_settings.header);
 			}
-			var headerHeight = getHeaderHeight(fixedHeader);
-			var endLocation = isNum ? anchor : getEndLocation(anchorElem, headerHeight, parseInt((typeof _settings.offset === 'function' ? _settings.offset(anchor, toggle) : _settings.offset), 10), _settings.clip); // Location to scroll to
-			var distance = endLocation - startLocation; // distance to travel
-			var documentHeight = getDocumentHeight();
-			var timeLapsed = 0;
-			var speed = getSpeed(distance, _settings);
-			var start, percentage, position;
+			let headerHeight = getHeaderHeight(fixedHeader);
+			let endLocation = isNum ? anchor : getEndLocation(anchorElem, headerHeight, parseInt((typeof _settings.offset === 'function' ? _settings.offset(anchor, toggle) : _settings.offset), 10), _settings.clip); // Location to scroll to
+			let distance = endLocation - startLocation; // distance to travel
+			let documentHeight = getDocumentHeight();
+			let timeLapsed = 0;
+			let speed = getSpeed(distance, _settings);
+			let start, percentage, position;
 
 			/**
 			 * Stop the scroll animation when it reaches its target (or the bottom/top of page)
@@ -430,10 +430,10 @@
 			 * @param {Number} endLocation Scroll to location
 			 * @param {Number} animationInterval How much to scroll on this loop
 			 */
-			var stopAnimateScroll = function (position, endLocation) {
+			let stopAnimateScroll = function (position, endLocation) {
 
 				// Get the current location
-				var currentLocation = window.pageYOffset;
+				let currentLocation = window.pageYOffset;
 
 				// Check if the end location has been reached yet (or we've hit the end of the document)
 				if (position == endLocation || currentLocation == endLocation || ((startLocation < endLocation && window.innerHeight + currentLocation) >= documentHeight)) {
@@ -459,7 +459,7 @@
 			/**
 			 * Loop scrolling animation
 			 */
-			var loopAnimateScroll = function (timestamp) {
+			let loopAnimateScroll = function (timestamp) {
 				if (!start) { start = timestamp; }
 				timeLapsed += timestamp - start;
 				percentage = (timeLapsed / parseInt(speed, 10));
@@ -495,7 +495,7 @@
 		/**
 		 * If smooth scroll element clicked, animate scroll
 		 */
-		var clickHandler = function (event) {
+		let clickHandler = function (event) {
 
 			// Don't run if the user prefers reduced motion
 			if (reduceMotion(settings)) return;
@@ -515,10 +515,10 @@
 			if (toggle.hostname !== window.location.hostname || toggle.pathname !== window.location.pathname || !/#/.test(toggle.href)) return;
 
 			// Get an escaped version of the hash
-			var hash = escapeCharacters(toggle.hash);
+			let hash = escapeCharacters(toggle.hash);
 
 			// Get the anchored element
-			var anchor = settings.topOnEmptyHash && hash === '#' ? document.documentElement : document.querySelector(hash);
+			let anchor = settings.topOnEmptyHash && hash === '#' ? document.documentElement : document.querySelector(hash);
 			anchor = !anchor && hash === '#top' ? document.documentElement : anchor;
 
 			// If anchored element exists, scroll to it
@@ -532,7 +532,7 @@
 		/**
 		 * Animate scroll on popstate events
 		 */
-		var popstateHandler = function (event) {
+		let popstateHandler = function () {
 
 			// Stop if history.state doesn't exist (ex. if clicking on a broken anchor link).
 			// fixes `Cannot read property 'smoothScroll' of null` error getting thrown.
@@ -546,7 +546,7 @@
 			// if (!history.state.anchor && history.state.anchor !== 0) return;
 
 			// Get the anchor
-			var anchor = history.state.anchor;
+			let anchor = history.state.anchor;
 			if (anchor && anchor !== 0) {
 				anchor = document.querySelector(escapeCharacters(history.state.anchor));
 				if (!anchor) return;
@@ -572,12 +572,11 @@
 			// Cancel any scrolls-in-progress
 			smoothScroll.cancelScroll();
 
-			// Reset variables
+			// Reset letiables
 			settings = null;
 			anchor = null;
 			toggle = null;
 			fixedHeader = null;
-			eventTimeout = null;
 			animationInterval = null;
 
 		};
@@ -594,7 +593,7 @@
 			// Destroy any existing initializations
 			smoothScroll.destroy();
 
-			// Selectors and variables
+			// Selectors and letiables
 			settings = extend(defaults, options || {}); // Merge user options with defaults
 			fixedHeader = settings.header ? document.querySelector(settings.header) : null; // Get the fixed header
 
